@@ -7,7 +7,6 @@ export class AuthController {
 
     @Post('register')
     async register(@Body() body: any){
-        console.log(2222);
         return await this.authService.register(body.email, body.password);
     }
 }
